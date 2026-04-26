@@ -4,8 +4,10 @@ import { Logo } from "./components/Logo";
 import { Menu } from "./components/Menu";
 import './styles/global.css';
 import './styles/theme.css';
+import { Footer } from "./components/Footer";
 
 export const App = () => {
+
     return (
         <>
             <Container>
@@ -18,6 +20,10 @@ export const App = () => {
 
             <Container>
                 <CountDown />
+            </Container>
+
+            <Container>
+                <Footer />
             </Container>
         </>
     );
