@@ -9,6 +9,7 @@ import { useTaskContext } from '../../contexts/TaskContext/useTaskContext';
 import { getNextCycle } from '../../utils/getNextCycle';
 import { getNextCycleType } from '../../utils/getNextCycleType';
 import { TaskActionTypes } from '../../contexts/TaskContext/taskActions';
+import { Tips } from '../Tips';
 
 export const MainForm = () => {
 
@@ -63,7 +64,7 @@ export const MainForm = () => {
 
             <div className={styles.formRow}>
                 <p>
-                    Nesse ciclo <b>descanse</b> por <b>x min.</b>
+                    <Tips nextCycleType={nextCycleType} />
                 </p>
             </div>
 
