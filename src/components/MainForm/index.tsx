@@ -42,7 +42,7 @@ export const MainForm = () => {
             type: nextCycleType,
         };
 
-        dispatch({ type: TaskActionTypes.START_TAKS, payload: newTask });
+        dispatch({ type: TaskActionTypes.START_TASK, payload: newTask });
     };
 
     const handleInterruptTask = () => {
