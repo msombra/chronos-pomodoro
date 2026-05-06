@@ -2,6 +2,7 @@ import { MainTemplate } from "../../templates/MainTemplate";
 import { Container } from "../Container";
 import { GenericHtml } from "../GenericHtml";
 import { Heading } from "../Heading";
+import { RouterLink } from "../RouterLink";
 
 export const NotFound = () => {
 
@@ -19,8 +20,8 @@ export const NotFound = () => {
                     </p>
                     <p>
                         Mas calma, você não está perdido no espaço (ainda). Dá pra voltar em
-                        segurança para a <a href='#'>página principal</a> ou{' '}
-                        <a href='#'>para o histórico</a> — ou pode ficar por aqui e
+                        segurança para a <RouterLink href='/'>página principal</RouterLink> ou{' '}
+                        <RouterLink href='/history/'>para o histórico</RouterLink> — ou pode ficar por aqui e
                         fingir que achou uma página secreta que só os exploradores mais
                         legais conseguem acessar. 🧭✨
                     </p>
