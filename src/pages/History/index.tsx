@@ -65,7 +65,7 @@ export const History = () => {
 
                 <Container>
                     <Heading>
-                        <span>History</span>
+                        <span>Histórico</span>
                         {hasTasks && <span className={styles.buttonContainer}>
                             <DefaultButton 
                                 icon={<TrashIcon />} color="red" 
