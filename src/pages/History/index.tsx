@@ -35,6 +35,10 @@ export const History = () => {
         }));
     }, [state.tasks]);
 
+    useEffect(() => {
+        document.title = 'Histórico - Chronos Pomodoro';
+    }, []);
+
     const handleSortTasks = ({ field }: Pick<SortTasksOptions, 'field'>) => {
         const newDirection = sortTaskOptions.direction === 'desc' ? 'asc' : 'desc';
 
